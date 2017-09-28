@@ -14,6 +14,9 @@
 		2DEBE0781F79F5DA00C54991 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DEBE0761F79F5DA00C54991 /* LaunchScreen.storyboard */; };
 		2DEBE0831F79F5DA00C54991 /* IphoneXtestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBE0821F79F5DA00C54991 /* IphoneXtestTests.swift */; };
 		2DEBE08E1F79F5DA00C54991 /* IphoneXtestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DEBE08D1F79F5DA00C54991 /* IphoneXtestUITests.swift */; };
+		2DEBE0DA1F7CA7D900C54991 /* guanzhou.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2DEBE0D81F7CA7D800C54991 /* guanzhou.gpx */; };
+		2DEBE0DB1F7CA7D900C54991 /* Testing.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2DEBE0D91F7CA7D900C54991 /* Testing.gpx */; };
+		2DEBE0DD1F7CBB6D00C54991 /* zhongguancun.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 2DEBE0DC1F7CBB6D00C54991 /* zhongguancun.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		2DEBE0891F79F5DA00C54991 /* IphoneXtestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IphoneXtestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DEBE08D1F79F5DA00C54991 /* IphoneXtestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IphoneXtestUITests.swift; sourceTree = "<group>"; };
 		2DEBE08F1F79F5DA00C54991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DEBE0D81F7CA7D800C54991 /* guanzhou.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = guanzhou.gpx; sourceTree = "<group>"; };
+		2DEBE0D91F7CA7D900C54991 /* Testing.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Testing.gpx; sourceTree = "<group>"; };
+		2DEBE0DC1F7CBB6D00C54991 /* zhongguancun.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = zhongguancun.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,9 @@
 		2DEBE06C1F79F5DA00C54991 /* IphoneXtest */ = {
 			isa = PBXGroup;
 			children = (
+				2DEBE0DC1F7CBB6D00C54991 /* zhongguancun.gpx */,
+				2DEBE0D81F7CA7D800C54991 /* guanzhou.gpx */,
+				2DEBE0D91F7CA7D900C54991 /* Testing.gpx */,
 				2DEBE06D1F79F5DA00C54991 /* AppDelegate.swift */,
 				2DEBE06F1F79F5DA00C54991 /* ViewController.swift */,
 				2DEBE0711F79F5DA00C54991 /* Main.storyboard */,
@@ -194,6 +203,11 @@
 					2DEBE0691F79F5DA00C54991 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					2DEBE07D1F79F5DA00C54991 = {
 						CreatedOnToolsVersion = 9.0;
@@ -234,7 +248,10 @@
 			files = (
 				2DEBE0781F79F5DA00C54991 /* LaunchScreen.storyboard in Resources */,
 				2DEBE0751F79F5DA00C54991 /* Assets.xcassets in Resources */,
+				2DEBE0DA1F7CA7D900C54991 /* guanzhou.gpx in Resources */,
 				2DEBE0731F79F5DA00C54991 /* Main.storyboard in Resources */,
+				2DEBE0DD1F7CBB6D00C54991 /* zhongguancun.gpx in Resources */,
+				2DEBE0DB1F7CA7D900C54991 /* Testing.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +444,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNDDP8RU9R;
 				INFOPLIST_FILE = IphoneXtest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sm.IphoneXtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -441,7 +460,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XNDDP8RU9R;
 				INFOPLIST_FILE = IphoneXtest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sm.IphoneXtest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
