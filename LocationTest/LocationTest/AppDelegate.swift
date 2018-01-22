@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  IphoneXtest
+//  LocationTest
 //
-//  Created by xingbo on 2017/9/26.
-//  Copyright © 2017年 xingbo. All rights reserved.
+//  Created by xingbo on 2017/12/13.
+//  Copyright © 2017年 test. All rights reserved.
 //
 
 import UIKit
@@ -16,44 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let results = combination("abcde", 3)
-        print(results.count, "\n", results)
         return true
-    }
-    
-    func combination(_ s: String, _ n: Int) -> [String] {
-        let length = s.count
-        if length < n {
-            return []
-        }
-        if length == n {
-            return [s]
-        }
-        if n == 1 {
-            var array = [String]()
-            for char in s {
-                array.append(String(char))
-            }
-            return array
-        }
-        var results = [String]()
-        // 循环获取当前字符串组合
-        for (_,letter) in s.enumerated() {
-            let newStr = s
-            let currentChar = String(letter)
-            let range: NSRange = (newStr as NSString).range(of: currentChar)
-            // 截取当前字符之后的字符串
-            let otherString = (newStr as NSString).substring(from: range.location + range.length)
-            // 获取n-1个字符组合
-            var subArray = combination(otherString, n - 1)
-            // 把当前字符拼到字符组合的开头
-            subArray = subArray.map({ ( sub) -> String in
-                return currentChar + sub
-            })
-            // 保存本次循环得到的组合结果
-            results.append(contentsOf: subArray)
-        }
-        return results
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
